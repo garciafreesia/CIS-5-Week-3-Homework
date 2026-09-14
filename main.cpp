@@ -1,36 +1,51 @@
 #include <iostream>
 #include <string>
 
-// Homework 3 — Your Name
+// Homework 3 — Freesia Garcia
 // CIS 5 Week 03 · Types & variables
 
 int main() {
   const int CURRENT_YEAR = 2026;
 
   // TODO: Lab 3 boxes — initialize on the same line
-  // std::string name = ...;
-  // int age = ...;
-  // double height_m = ...;
-  // char initial = ...;
-  // bool student = ...;
+  std::string name = "Fresia Garcia";
+  int age = 19;
+  double height_m = 1.67;
+  char initial = 'F';
+  bool student = true;
+
 
   // TODO: two more from this week's menu
-  // int credits = ...;
-  // double gpa = ...;
+  int credits = 15;
+  double gpa = 3.5;
 
-  // TODO: a comment that explains a type choice (why int, why double, or why const)
+  // Credits is an int because college credits are counted by whole numbers
+  // GPA is a double because there can be decimals in GPA values
 
   std::cout << "=== About me ===\n";
-  // TODO: labeled lines from the names
-  // TODO: one short paragraph from those same names — not leftover quotes
 
-  // TODO: change one value from a first choice. Comment the old value,
-  // the new value, and why the console followed.
+  std::cout << "Name: " << name << "\n";
+  std::cout << "Age: " << age << "\n";
+  std::cout << "Height (m): " << height_m << "\n";\
+  std::cout << "Initial: " << initial << "\n";
+  std::cout << "Student: " << student << "\n";
+  std::cout << "Credits: " << credits << "\n";
+  std::cout << "GPA: " << gpa << "\n";
+  std::cout << "Year: " << CURRENT_YEAR << "\n";
+  
+  std::cout << name << " is " << age
+            << " years old, taking "
+            << credits << " credits in "
+            << CURRENT_YEAR
+            << " with a GPA of "
+            << gpa << ".\n";
 
-  // TODO: two lines that would not compile — leave them commented
-  // Example shape (write your own, with the reason):
-  // int age = "nineteen";   // would not compile — ...
-  // CURRENT_YEAR = 2027;    // would not compile — ...
+  // int age = "nineteen" will not compile because 
+  // the string cannot be an int
 
+  // char initial = "F"
+  // char stores only one character so it needs single quotes, strings use double quotes
+ 
+ 
   return 0;
 }
